@@ -5,6 +5,14 @@ def get_destination_index(destination):
   destination_index = destinations.index(destination)
   return destination_index
 
-print(get_destination_index("Los Angeles, USA"))
+def get_traveler_location(traveler):
+    traveler_destination = traveler[1]
+    traveler_destination_index = destinations.index(traveler_destination)
+    return traveler_destination_index
 
-random_list = [1, 2]
+#print(get_destination_index("Los Angeles, USA"))
+#print(get_destination_index("Paris, France"))
+#print(get_destination_index("Hyderabad, India"))
+
+test_destination_index = get_traveler_location(test_traveler)
+print(test_destination_index)
